@@ -1,7 +1,7 @@
 askUserInfo = () => {
     const name = prompt('Введите ваше имя:');
     if (name === null) {
-        return null;
+        return  alert('Вы ничего не ввели');
     } else if (name === '') {
         alert('Вы ничего не ввели');
         return askUserInfo();
@@ -26,7 +26,7 @@ getAllUsers = () => {
 
     while (userInfo !== null) {
         users.push(userInfo);
-        alert('для выхода нажмите : выход')
+        alert('для выхода нажмите кнопку: ok')
         userInfo = askUserInfo();
     }
     return users;
