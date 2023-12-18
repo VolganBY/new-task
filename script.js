@@ -26,7 +26,7 @@ getAllUsers = () => {
 
     while (userInfo !== null) {
         users.push(userInfo);
-        alert('для выхода нажмите кнопку: ok')
+        alert('для возврата нажмите : ok')
         userInfo = askUserInfo();
     }
     return users;
